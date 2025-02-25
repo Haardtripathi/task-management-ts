@@ -12,7 +12,11 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+    origin: [
+        "https://task-manager-pve9.onrender.com"
+    ]
+}));
 app.use(express.json());
 
 
