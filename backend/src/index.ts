@@ -14,7 +14,7 @@ const app = express();
 // Middleware
 app.use(cors({
     origin: [
-        "https://task-manager-pve9.onrender.com"
+        "https://task-manager-pve9.onrender.com/"
     ]
 }));
 app.use(express.json());
