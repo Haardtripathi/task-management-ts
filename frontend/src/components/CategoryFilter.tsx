@@ -83,7 +83,7 @@ const CategoryFilter = () => {
         ? tasks
         : tasks.filter(task => task.status === selectedCategory);
 
-    const getTaskCount = (category) => {
+    const getTaskCount = (category: string) => {
         return category === "All"
             ? tasks.length
             : tasks.filter(task => task.status === category).length;
@@ -103,8 +103,8 @@ const CategoryFilter = () => {
                                 key={id}
                                 onClick={() => setSelectedCategory(id)}
                                 className={`flex items-center justify-center gap-2 p-3 rounded-xl transition-all duration-300 whitespace-nowrap ${isSelected
-                                        ? 'bg-gradient-to-r from-purple-500 to-indigo-500 text-white shadow-lg'
-                                        : 'hover:bg-[#0B0B1E]/50 text-gray-400 hover:text-white'
+                                    ? 'bg-gradient-to-r from-purple-500 to-indigo-500 text-white shadow-lg'
+                                    : 'hover:bg-[#0B0B1E]/50 text-gray-400 hover:text-white'
                                     }`}
                             >
                                 <Icon className="w-4 h-4" />
