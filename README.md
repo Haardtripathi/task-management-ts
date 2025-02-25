@@ -4,7 +4,7 @@ A **full-stack task management application** built with **React (Vite) + TypeScr
 
 ## 🚀 Live Demo
 
-- **Live App**: [https://task-manager-pve9.onrender.com/login](https://task-manager-pve9.onrender.com/login)
+- **Live App**: [https://task-manager-pve9.onrender.com](https://task-manager-pve9.onrender.com)
 
 ---
 
